@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rain Reader - CTV</title>
+<meta name="description" content="Rain Reader, a CTV activity. Version A reads weather charts, version B reads the same task as Python code.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header><p class="series"><a href="../">CTV series</a> &middot; Rain Reader</p><h1>Rain Reader</h1></header>
+<main>
+<p>Singapore has no winter and no summer - but December brings about three times February's rain, and everyone, everywhere, checks the sky before leaving home. A weather station reads that story in two charts.</p>
+<p>Your job: read the charts, work the station key, and place the four numbered tiles on the umbrella board.</p>
+<ul class="games">
+<li><a class="game" href="a/"><span class="ico" aria-hidden="true">ð§ï¸</span><span><b>Version A</b><small>Read the weather charts and place the numbered tiles on the umbrella board.</small></span></a></li>
+<li><a class="game" href="b/"><span class="ico" aria-hidden="true">ð</span><span><b>Version B</b><small>The same task as Python code: work out what the program stores.</small></span></a></li>
+</ul>
+<section aria-labelledby="rr-how">
+<h2 id="rr-how" style="font-size:1.15rem;margin:26px 0 0">How to play</h2>
+<ol>
+<li>Find a numbered badge on the charts and read the value at that point - with its unit.</li>
+<li>Look that value up in the station key to learn its tile number.</li>
+<li>Place that tile in the badge's slot on the umbrella board.</li>
+<li>Then answer one last question: which chart answers which kind of question?</li>
+</ol>
+</section>
+<section aria-labelledby="rr-why">
+<h2 id="rr-why" style="font-size:1.15rem;margin:26px 0 0">Why this is computational thinking</h2>
+<ol>
+<li>Decomposition: one big board becomes four small readings.</li>
+<li>Pattern recognition: the two charts look alike but measure different things - millimetres versus days.</li>
+<li>Abstraction: the key hides the arithmetic; only value and unit matter.</li>
+<li>Algorithm design: badge, read, look up, place - the same steps work for every slot, in any order.</li>
+</ol>
+</section>
+<section aria-labelledby="rr-data">
+<h2 id="rr-data" style="font-size:1.15rem;margin:26px 0 0">Where the numbers come from</h2>
+<p>Both charts show real long-term averages recorded at Singapore's Changi climate station for 1991-2020, published by the Meteorological Service Singapore. Rainfall values are rounded to the nearest 10 mm so they can be read cleanly from the chart.</p>
+<p>Version B shows the same numbers as Python dictionaries. Every value you trace in the code is a real reading from the station's climate table.</p>
+<p><a href="https://www.weather.gov.sg/climate-climate-of-singapore/">Source: Climate of Singapore, weather.gov.sg</a></p>
+</section>
+</main>
+<footer><p>Data checked 21 October 2026 against weather.gov.sg. Plays in your browser. Nothing is saved or sent anywhere.</p></footer>
+</body>
+</html>
