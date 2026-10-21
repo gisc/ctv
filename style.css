@@ -1,0 +1,16 @@
+:root { color-scheme: light; }
+body { margin: 0; background: #faf6ea; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+header, main, footer { max-width: 560px; margin: 0 auto; padding: 0 16px; }
+header { padding-top: 22px; }
+h1 { margin: 0 0 4px; font-size: 1.6rem; }
+.series { margin: 0; color: #6b6550; font-size: .9rem; }
+main { padding-bottom: 8px; }
+footer { padding-bottom: 28px; color: #6b6550; font-size: .85rem; }
+a { color: #1d4f9c; }
+.games { list-style: none; margin: 18px 0; padding: 0; display: grid; gap: 12px; }
+.game { display: flex; gap: 14px; align-items: center; background: #fff; border: 1px solid #e3dece; border-radius: 14px; padding: 14px; text-decoration: none; color: #222; min-height: 44px; }
+.game .ico { font-size: 2.2rem; line-height: 1; }
+.game b { display: block; font-size: 1.05rem; }
+.game small { color: #6b6550; }
+.game:focus-visible { outline: 3px solid #2d6cdf; outline-offset: 2px; }
+.soon { color: #6b6550; font-size: .9rem; }
