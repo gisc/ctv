@@ -178,7 +178,7 @@ export function mount(root, opts) {
   };
   const badCount = r => Object.values(r.ok).filter(v => !v).length + (r.whichOk ? 0 : 1);
   const rowCls = ok => (result && marks ? (ok ? ' ok' : ' no') : '');
-  const mark = ok => (result && marks ? (ok ? ' â' : ' â') : '');
+  const mark = ok => (result && marks ? (ok ? ' ✓' : ' ✗') : '');
   const tileChoices = (sel, slot) => `<span class="rr-tiles" role="group" aria-label="Tile choices">${[1, 2, 3, 4].map(t =>
     `<button type="button" data-place="${slot}:${t}" class="rr-tile${sel === t ? ' sel' : ''}" aria-pressed="${sel === t}">${t}</button>`).join('')}</span>`;
 
@@ -211,7 +211,7 @@ export function mount(root, opts) {
     }
     const facts = [];
     let workedText = '';
-    const okS = c => (c ? 'â' : 'â');
+    const okS = c => (c ? '✓' : '✗');
     if (inv.kind === 'slot') {
       const q = qBySlot(round, inv.slot);
       const readOk = inv.v === q.value;
@@ -304,7 +304,7 @@ export function mount(root, opts) {
   function confetti() {
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const d = document.createElement('div'); d.className = 'rr-conf'; d.setAttribute('aria-hidden', 'true');
-    const bits = ['ð§ï¸', 'ð§', 'â', 'ð¦ï¸', 'â¨'];
+    const bits = ['🌧️', '💧', '☔', '🌦️', '✨'];
     for (let i = 0; i < 28; i++) {
       const s = document.createElement('span');
       s.textContent = bits[i % bits.length];
